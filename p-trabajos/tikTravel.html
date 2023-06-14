@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/p-trabajo.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <script src="../jquery-3.7.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <title>Agencia de Viajes</title>
+</head>
+<body>
+
+    <header>
+        
+        <nav class="row d-flex navbar navegacion p-0">
+            
+            <div class="col-2 container-foto d-flex justify-content-end">
+                <a class="navbar-brand" href="#">
+                    <img src="../img/foto curriculum.jpg" width="45" height="45" class="d-inline-block align-top" alt="">
+                </a>
+            </div>
+
+            <div class="contenedor-profesion col-5">
+                <h5 class="nombre">Alba Espejo Crespo</h5>
+                <h6 class="profesion">Desarrolladora Front End</h6>
+                <h6 class="profesion">Diseñadora Web</h6>
+            </div>
+
+            <div class="col-5 d-md-none d-lg-none d-xl-none d-xxl-none pos-f-t">   
+                <nav class="navbar justify-content-center">
+
+                    <div class="col-xs-3 col-sm-6"><a class="visitado navbar navbar-dark" href="#"><button class="navbar-toggler "  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button></a></div> 
+
+                      
+                      <div class="menu_desplegable offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" id="#menu_desplegable">
+                        <div class="offcanvas-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="btn-inicio" aria-current="page" href="../index.html#inicio" onclick="cerrar()">Inicio</a>
+
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="btn-trabajos" href="../index.html#trabajos" onclick="cerrar()">Trabajos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" id="btn-contacto" href="../index.html#contacto" onclick="cerrar()">Contacto</a>
+                            </li>
+                          </ul>
+                          
+                        </div>
+                      </div>
+                    
+                </nav>
+            </div>
+
+
+            <div class="col-5 d-flex menu-inicio align-self-end justify-content-end">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#trabajos">Trabajos</a>
+                <a href="../index.html#contacto">Contacto</a>    
+            </div>
+            
+        </nav>
+
+    </header>
+
+    <main>
+      <div class="container d-flex mt-3">
+        <div class="col-10 d-flex justify-content-center"><h1 class="title-trabajos">App TikTravel</h1></div>
+        <div class="codigo col-2 mt-4"><a href="../index.html#travel">Volver</a></div>
+      </div>
+
+      <div class="row d-flex mt-5">
+        <div class="col-12 d-flex justify-content-center">
+            <iframe class="iframe video-1" width="35%" height="300px" src="https://www.youtube.com/embed/LwrfyVXjp3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+        </div>
+      </div>
+
+      <div class="container paginas all d-flex justify-content-around mt-5 mb-4">
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Portada</button>
+
+          <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@mdo">Inicio</button>
+
+          <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@mdo">Buscar</button>
+
+          <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal3" data-bs-whatever="@mdo">Notificaciones</button>
+
+          <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal4" data-bs-whatever="@mdo">Perfil</button>
+
+          <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal5" data-bs-whatever="@mdo">Seguidores</button>
+
+      </div>
+
+      <!-- *MODAL CON CARRUSEL DENTRO -->
+    
+      <!-- Carousel  Portada-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">    
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Portada</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+              <div class="modal-body">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../trabajos/app-travel-figma/1-buena.png" alt="portada" class="d-block w-100">
+                  </div>                 
+                </div>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Carousel  Pagina de Inicio-->
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">    
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">Página de Inicio</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+  
+                <div class="modal-body">
+                  <div id="demo1" class="carousel slide" data-bs-ride="carousel">
+                  <!-- The slideshow/carousel -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../trabajos/app-travel-figma/inicio.png" alt="inicio tik travel" class="d-block w-100">
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          </div>
+      </div>
+  
+      <!-- Carousel  Pagina de Buscar-->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">    
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">Página de Buscar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+  
+                <div class="modal-body">
+                  <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+                  <!-- Indicators/dots -->
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+                  </div>
+  
+                  <!-- The slideshow/carousel -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../trabajos/app-travel-figma/buscar.png" alt="Los Angeles" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../trabajos/app-travel-figma/buscar-categorias-buena.png" alt="Chicago" class="d-block w-100">
+                    </div>
+                    
+                  </div>
+  
+                  <!-- Left and right controls/icons -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+                    <span class="bg-negro carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+                    <span class="bg-negro carousel-control-next-icon"></span>
+                  </button>
+                </div>
+            </div>
+          </div>
+          </div>
+      </div>
+
+      <!-- Carousel  Pagina de Notificaciones-->
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">    
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel3">Página de Notificaciones</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+  
+                <div class="modal-body">
+                  <div id="demo3" class="carousel slide" data-bs-ride="carousel">
+                  <!-- Indicators/dots -->
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo3" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo3" data-bs-slide-to="1"></button>
+                  </div>
+  
+                  <!-- The slideshow/carousel -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../trabajos/app-travel-figma/notificaciones-buena.png" alt="Los Angeles" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../trabajos/app-travel-figma/notificaciones2-buena.png" alt="Chicago" class="d-block w-100">
+                    </div>
+                    
+                  </div>
+  
+                  <!-- Left and right controls/icons -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-negro"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-negro"></span>
+                  </button>
+                </div>
+            </div>
+          </div>
+          </div>
+      </div>
+
+      <!-- Carousel  Pagina de Perfil-->
+      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">    
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel4">Página de Perfil</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+  
+                <div class="modal-body">
+                  <div id="demo4" class="carousel slide" data-bs-ride="carousel">
+                  <!-- Indicators/dots -->
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo4" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo4" data-bs-slide-to="1"></button>
+                  </div>
+  
+                  <!-- The slideshow/carousel -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../trabajos/app-travel-figma/perfil-buena.png" alt="perfil" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../trabajos/app-travel-figma/perfil-2-buena.png" alt="perfil 1" class="d-block w-100">
+                    </div>
+                  </div>
+  
+                  <!-- Left and right controls/icons -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#demo4" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-negro"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#demo4" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-negro"></span>
+                  </button>
+                </div>
+            </div>
+          </div>
+          </div>
+      </div>
+
+      <!-- Carousel  Pagina de Seguidores-->
+      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">    
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel5">Página de Seguidores</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+  
+                <div class="modal-body">
+                  <div id="demo5" class="carousel slide" data-bs-ride="carousel">
+                  <!-- Indicators/dots -->
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo5" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo5" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo5" data-bs-slide-to="2"></button>
+                  </div>
+  
+                  <!-- The slideshow/carousel -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../trabajos/app-travel-figma/seguidores-buena.png" alt="pagina seguidores" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../trabajos/app-travel-figma/seguidores1-buena.png" alt="pagina seguidores 1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../trabajos/app-travel-figma/seguidores2-buena.png" alt="pagina seguidores 2" class="d-block w-100">
+                    </div>
+                    
+                  </div>
+  
+                  <!-- Left and right controls/icons -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#demo5" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-negro"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#demo5" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-negro"></span>
+                  </button>
+                </div>
+            </div>
+          </div>
+          </div>
+      </div>
+  
+    </main>
+    
+</body>
+</html>

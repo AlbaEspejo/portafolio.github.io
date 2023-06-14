@@ -1,0 +1,125 @@
+
+.trabajos {
+    background: #E3E3E3;
+}
+.trabajos .titulo-trabajos{
+    margin-top: 30px;
+}
+
+.trabajos .titulo{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Amatic SC', cursive;
+    color: #8DA487;
+}
+.trabajos .container-post input[type="radio"]{
+    display: none;
+}
+
+.trabajos .menu-habilidades .lista-habilidades{
+    
+    margin-top: 30px;
+    margin-bottom: 300px;
+}
+.trabajos .container-post .container{
+    padding: 100px;
+}
+.trabajos .container-category{
+    flex-wrap: wrap;
+}
+.trabajos .container-category label{
+    margin-top: 30px;
+    margin-bottom: 120px;
+    padding: 2px 10px 2px 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    border-radius: 10%;
+    color: #8da487;
+    background: #e3e3e3;
+    box-shadow: inset 0px 2px 20px 0px rgb(201, 201, 201)
+}
+.trabajos .container-category label:hover{
+    background: rgba(43, 87, 33, 0.588);
+    color: white;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.trabajos .container .card-personalizado{
+    margin-top: 20px;
+    height: 390px;
+    border-radius: 5px;
+}
+.trabajos .container .card-personalizado:hover{
+    transition: transform 0.8s;
+    transform: scale(1.15); 
+}
+.trabajos .container .card-personalizado img{
+    height: 220px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.trabajos .container .card-personalizado p{
+    font-family: 'Sansita', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+/* .trabajos .container .card .btn-ver-trabajo .figma{
+    margin: 0;
+}
+.trabajos .container .card .btn-ver-trabajo .small{
+    font-size: 9px;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: 0px;
+} */
+
+/* .trabajos .container .card .btn-ver-trabajo .small{
+    padding: 2px;
+} */
+
+.trabajos .container .card{
+    margin-bottom: 30px;
+    margin-left: 5px;
+    background: #8DA487;
+    border: none;
+    box-shadow: 0.5px 0.5px 12px gray
+}
+
+.trabajos .container .card .card-title{
+    font-family: 'Sansita', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+}
+.trabajos .container .card .btn-ver-trabajo{
+    margin-top: 30px;
+}
+.trabajos .container .card .btn-ver-trabajo a:hover{
+    background: #4f684a;
+}
+.trabajos .container .card .btn-ver-trabajo p{
+    font-size: 10px;
+    padding: 0 4px 0 4px;
+    border: 2px solid #22421b42;
+    border-radius: 3px;
+    color: #22421b;
+    margin-left: 2px;
+}
+
+.trabajos .container .card .btn{
+    background: #8DA487;
+    border-color: white;
+}
+.trabajos .ver-mas{
+    margin-bottom: 50px;
+}
+.trabajos .ver-mas h3{
+    font-family: 'Playfair Display', serif;
+    color: #C0931F !important;
+    font-size: 25px;
+    margin-bottom: 50px;
+}

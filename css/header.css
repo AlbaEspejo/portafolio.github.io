@@ -1,0 +1,178 @@
+
+header{
+    background: #8DA487;
+    height: auto;
+    max-height: 600px;
+
+}
+
+/* header .navbar{
+
+    margin-left: auto;
+    position: fixed;
+} */
+header .container .navbar .navbar-brand{
+    text-decoration: none;
+}
+header .container .navbar .navbar-toggler{
+    margin-left: auto;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    margin-top: -37px;
+    margin-right: 12px;
+}
+header .container .navbar .navbar-toggler:focus{
+    border-color: #8DA487 !important;
+}
+header .container .navbar .navbar-toggler span{
+    
+    text-decoration: none;
+    border-color: #8DA487;
+    
+}
+
+header .container .navbar .offcanvas .offcanvas-body .form-search .form-control{
+    background: rgb(255, 255, 255);
+    border-color: #8DA487
+}
+header .container .navbar .offcanvas .offcanvas-body .form-search .form-control:focus{
+    outline: 0;
+    border: none;
+    -webkit-box-shadow: inset 0 1px 1px rgba(20, 65, 11, 0.479),0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(20, 65, 11, 0.856),0 0 8px rgb(104, 145, 162);
+
+}
+header .container .navbar .offcanvas .offcanvas-body .form-search .btn-search{
+    background: #8da487;
+    color: white;
+}
+
+header .toggle-menu{
+    margin-right: 0.5rem;
+}
+header .toggle-menu a{
+    color: #ffffff;
+    filter: invert(1);
+}
+
+header .toggle-menu toggle-icon{
+    position: absolute;
+    cursor: pointer;
+}
+header .container{
+    position: relative;
+}
+
+header .container .menu{
+    width: 100%;
+}
+
+header .menu{
+    margin-bottom: 10px;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
+header .container .contenedor-texto .navbar .offcanvas .menu_desplegable .nav-item .nav-link{
+    color: #C0931F;
+    
+}
+/* .menu_close{
+    opacity: 0;
+    pointer-events: none;
+} */
+header .menu a{
+    margin: 0px 20px;
+    color: #FFFFFF;
+    padding-bottom: 5px;
+    font-size: 1em;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+header .menu a:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.menu .inicio{
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+.menu .trabajo,
+.menu .contacto{
+    opacity: 0.7;
+}
+
+header .contenedor-texto{
+    display: flex;
+    margin-top: 50px;
+    padding: 0;
+}  
+
+header .contenedor-texto .texto h1, 
+header .contenedor-texto .texto h2{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+header .contenedor-texto .texto .nombre{
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 50px;
+}
+header .contenedor-texto .texto .profesion{
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+header .container .buscador {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+}
+
+.main .container{
+    overflow: visible;
+}
+.main .acerca-de{
+    text-align: center;
+}
+
+.main .acerca-de .foto{
+    margin-top: -70px;
+}
+
+.main .acerca-de .foto img{
+    vertical-align: top;
+    border-radius: 50%;
+    border: 5px solid #ffffff50;
+}
+
+.main .acerca-de .texto{
+    color: #000000;
+    opacity: 0.8;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 0.8em;
+    line-height: 30px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.main .acerca-de .titulo{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    color: #C0931F;
+}
+.trabajos {
+    margin-top: 60px;
+    background: #E3E3E3;
+}
