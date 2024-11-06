@@ -33,13 +33,45 @@ $(function() {
     }
 
     // Selección de elementos y categorías
+    // $('.category-item').click(function() {
+    //     let categories = $(this).attr('category');
+    //     $('.card').hide(); // Oculta todos
+    //     $(`.card[category*=${categories}]`).fadeIn(400); // Muestra los seleccionados
+    //     $('.category-item').removeClass('ct-active');
+    //     $(this).addClass('ct-active');
+    // });
     $('.category-item').click(function() {
         let categories = $(this).attr('category');
-        $('.card').hide(); // Oculta todos
-        $(`.card[category*=${categories}]`).fadeIn(400); // Muestra los seleccionados
+    
+        // Si se selecciona "all", mostrar todas las tarjetas
+        if (categories === 'all') {
+            $('.card').fadeIn(400);
+        } else {
+            $('.card').hide();
+            $(`.card[category*=${categories}]`).fadeIn(400);
+        }
+    
+        // Cambiar clase activa
         $('.category-item').removeClass('ct-active');
         $(this).addClass('ct-active');
+    
+        // Verificar si hay una sola tarjeta visible
+        let visibleCards = $('.card:visible');
+        if (visibleCards.length === 1) {
+            $('.container-trabajos-div').addClass('single-card-container');
+            visibleCards.addClass('single-card-margin');
+        } else {
+            $('.container-trabajos-div').removeClass('single-card-container');
+            $('.card').removeClass('single-card-margin');
+        }
     });
+    
+
+
+
+
+
+
 
     // Cuando se hace clic en inicio, trabajo o contacto, muestra todas las tarjetas
     $('.inicio, .trabajo, .contacto').click(function() {
