@@ -10,73 +10,72 @@
 
     <script src="../jquery-3.7.0.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <title>APP Music</title>
+    <title>Blog</title>
 </head>
 <body>
 
     <header>
        
-        <nav class="row d-flex navbar navegacion p-0">
-            
-            <div class="col-2 container-foto d-flex justify-content-end">
-                <a class="navbar-brand" href="#">
-                    <img src="../img/foto curriculum.jpg" width="45" height="45" class="d-inline-block align-top" alt="">
-                </a>
-            </div>
-
-            <div class="contenedor-profesion col-5">
-                <h5 class="nombre">Alba Espejo Crespo</h5>
-                <h6 class="profesion">Desarrolladora Front End</h6>
-                <h6 class="profesion">Diseñadora Web</h6>
-            </div>
-
-            <div class="col-5 d-md-none d-lg-none d-xl-none d-xxl-none pos-f-t">   
-                <nav class="navbar justify-content-center">
-
-                    <div class="col-xs-3 col-sm-6"><a class="visitado navbar navbar-dark" href="#"><button class="navbar-toggler "  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                      </button></a></div> 
-
-                      
-                      <div class="menu_desplegable offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" id="#menu_desplegable">
-                        <div class="offcanvas-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <nav class="row d-flex navbar navegacion align-items-start p-0">
+        <div class="col-auto container-foto d-flex justify-content-end">
+            <a class="navbar-brand" href="#">
+                <img src="../img/foto curriculum.jpg" width="45" height="45" class="d-inline-block align-top" alt="">
+            </a>
+        </div>
+    
+        <div class="contenedor-profesion col d-flex flex-column justify-content-start align-self-center">
+            <h5 class="nombre w-auto">Alba Espejo Crespo</h5>
+            <h6 class="profesion">Desarrolladora Front End</h6>
+            <h6 class="profesion">Diseñadora Web</h6>
+        </div>
+    
+        <div class="col-auto d-md-none d-lg-none d-xl-none d-xxl-none pos-f-t d-flex justify-content-end">
+            <nav class="navbar justify-content-center">
+                <div class="col-xs-3 col-sm-6 lineas-menu-desplegable">
+                    <a class="visitado navbar navbar-dark" href="#">
+                        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </a>
+                </div>
+    
+                <div class="menu_desplegable offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                              <a class="nav-link active" id="btn-inicio" aria-current="page" href="../index.html#inicio" onclick="cerrar()">Inicio</a>
-
+                                <a class="nav-link active" id="btn-inicio" aria-current="page" href="../index.html#inicio" onclick="cerrar()">Inicio</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" id="btn-trabajos" href="../index.html#trabajos" onclick="cerrar()">Trabajos</a>
+                                <a class="nav-link" id="btn-trabajos" href="../index.html#trabajos" onclick="cerrar()">Trabajos</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link" id="btn-contacto" href="../index.html#contacto" onclick="cerrar()">Contacto</a>
                             </li>
-                          </ul>
-                          
-                        </div>
-                      </div>
-                    
-                </nav>
-            </div>
-
-            <div class="col-5 d-flex menu-inicio align-self-end justify-content-end">
-                <a href="../index.html">Inicio</a>
-                <a href="../index.html#trabajos">Trabajos</a>
-                <a href="../index.html#contacto">Contacto</a>    
-            </div>
-            
-        </nav>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    
+        <div class="col-5 d-flex menu-inicio align-self-end justify-content-end">
+            <a href="../index.html">Inicio</a>
+            <a href="../index.html#trabajos">Trabajos</a>
+            <a href="../index.html#contacto">Contacto</a>
+        </div>
+      </nav>
 
     </header>
 
     <main>
-      <div class="container d-flex mt-3">
+      <div class="container d-flex mt-3 div-title-enlaces">
         <div class="col-8 d-flex justify-content-center"><h1 class="title-trabajos">Blog</h1></div>
-        <div class="codigo col-2 mt-4"><a href="https://github.com/AlbaEspejo/blog.git" target="_blank">Ver código</a></div>
-        <div class="codigo col-1 mt-4 d-flex"><a href="../index.html#blog">Volver</a></div>
+        <div class="enlaces-trabajos-paginas">
+          <div class="codigo ver-codigo  col-2 mt-4"><a href="https://github.com/AlbaEspejo/blog.git" target="_blank">Ver código</a></div>
+          <div class="codigo col-1 mt-4 d-flex"><a href="../index.html#blog">Volver</a></div>
+        </div>
       </div>
 
       <!-- Video de Youtube -->

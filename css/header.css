@@ -5,12 +5,6 @@ header{
     max-height: 600px;
 
 }
-
-/* header .navbar{
-
-    margin-left: auto;
-    position: fixed;
-} */
 header .container .navbar .navbar-brand{
     text-decoration: none;
 }
@@ -20,18 +14,18 @@ header .container .navbar .navbar-toggler{
     text-decoration: none;
     outline: none;
     margin-top: -37px;
-    margin-right: 12px;
+    margin-right: 0px;
 }
 header .container .navbar .navbar-toggler:focus{
     border-color: #8DA487 !important;
 }
 header .container .navbar .navbar-toggler span{
-    
     text-decoration: none;
     border-color: #8DA487;
-    
 }
-
+header .container .navbar .offcanvas .offcanvas-header{
+    margin-right: -300px !important;
+}
 header .container .navbar .offcanvas .offcanvas-body .form-search .form-control{
     background: rgb(255, 255, 255);
     border-color: #8DA487
@@ -78,21 +72,18 @@ header .container .contenedor-texto .navbar .offcanvas .menu_desplegable .nav-it
     color: #C0931F;
     
 }
-/* .menu_close{
-    opacity: 0;
-    pointer-events: none;
-} */
 header .menu a{
     margin: 0px 20px;
     color: #FFFFFF;
-    padding-bottom: 5px;
-    font-size: 1em;
+    font-size: 1.3em;
     display: inline-block;
     text-decoration: none;
+    padding-bottom: 1px;
     border-bottom: 2px solid transparent;
 }
 header .menu a:hover{
-    text-decoration: underline;
+    padding-bottom: 1px;
+    border-bottom: 2px solid white;
     opacity: 1;
 }
 .menu .inicio{
@@ -106,8 +97,7 @@ header .menu a:hover{
 
 header .contenedor-texto{
     display: flex;
-    margin-top: 50px;
-    padding: 0;
+    padding: 30px;
 }  
 
 header .contenedor-texto .texto h1, 
@@ -143,23 +133,23 @@ header .container .buscador {
 }
 
 .main .acerca-de .foto{
-    margin-top: -70px;
+    margin-top: -120px;
 }
 
 .main .acerca-de .foto img{
+    width: 200px;
     vertical-align: top;
     border-radius: 50%;
-    border: 5px solid #ffffff50;
+    border: 5px solid white;
 }
 
 .main .acerca-de .texto{
     color: #000000;
     opacity: 0.8;
     font-family: 'Playfair Display', serif;
-    font-weight: 800;
-    font-size: 0.8em;
+    font-weight: 700;
     line-height: 30px;
-    width: 80%;
+    width: 100%;
     margin: 30px auto;
 }
 
@@ -168,6 +158,7 @@ header .container .buscador {
     line-height: 40px;
     margin-bottom: 40px;
     font-weight: 700;
+    text-shadow: 1px 1px 0px #C0931F;
     text-align: center;
     font-family: 'Amatic SC', cursive;
     color: #C0931F;
@@ -175,4 +166,72 @@ header .container .buscador {
 .trabajos {
     margin-top: 60px;
     background: #E3E3E3;
+}
+
+@media (max-width:991px){
+    .main .acerca-de .foto{
+        margin-top: -70px;
+    }
+    .main .acerca-de .foto img{
+        width: 130px;
+        vertical-align: top;
+        border-radius: 50%;
+        border: 5px solid white;
+    }
+    header .contenedor-texto .texto .nombre{
+        margin-bottom: 0px;
+        font-size: 30px;
+        line-height: 50px;
+    }
+    header .contenedor-texto .texto h2{
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+}
+
+
+
+/* Menú principal en pantallas grandes */
+@media (min-width: 992px) {
+    #menu {
+        display: flex;
+    }
+}
+
+/* Para que el menú desaparezca en pantallas pequeñas (solo el botón navbar-toggler estará visible) */
+@media (max-width: 767px) {
+    #menu {
+        display: none; /* Ocultarlo en pantallas pequeñas por defecto */
+    }
+}
+@media (min-width: 575px) {
+    header .contenedor-texto{
+        padding: 10px;
+    }
+    header .contenedor-texto .texto .nombre{
+        margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 50px;
+    }
+    header .contenedor-texto .texto h2{
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 15px;
+        font-weight: 400;
+    }
+}
+@media (max-width: 400px){
+    header .contenedor-texto .texto .nombre{
+        font-size: 24px !important;
+    }
+    header .contenedor-texto .texto h2{
+        font-size: 14px;
+    }
+    .main .acerca-de .titulo{
+        margin-bottom: 8px;
+    }
+    .texto p{
+        font-size: 14px;
+    }
 }

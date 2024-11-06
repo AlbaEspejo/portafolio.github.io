@@ -18,100 +18,71 @@
     <script src="./js/bootstrap.min.js"></script>
     
     <script src="function.js"></script>
-    <script src="trabajo1.js"></script>
 
 </head>
 <body>
 
     <header id="inicio">
-    
-        <div class="container p-0 ">
-                
 
-                  <div class="d-flex justify-content-xs-between justify-content-md-between contenedor-texto">
-                    
-                    <div class="texto col-xs-9 col-sm-6 col-md-6">
-                        <h1 class="nombre">Alba Espejo Crespo</h1>
-                        <h2 class="profesion-1">Desarrolladora Front End</h2>
-                        <h2 class="profesion-2">Diseñadora web</h2>
-                    </div>
-
-                    <nav class=" d-flex col-xs-6 col-sm-6 navbar d-md-none d-lg-none d-xl-none d-xxl-none justify-content-end" >
-                    
-                      
-                        <div class="col-xs-3 col-sm-6"><a class="visitado navbar navbar-dark" href="#"><button class="navbar-toggler "  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                          <span class="navbar-toggler-icon"></span>
-                        </button></a></div> 
-  
-                        
-                        <div class="menu_desplegable offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" id="#menu_desplegable">
-                          <div class="offcanvas-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                          </div>
-                          <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                              <li class="nav-item">
-                                <a class="nav-link active" id="btn-inicio" aria-current="page" href="#" onclick="cerrar()">Inicio</a>
-
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" id="btn-trabajos" href="#" onclick="cerrar()">Trabajos</a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                  <a class="nav-link" id="btn-contacto" href="#" onclick="cerrar()">Contacto</a>
-                              </li>
-                            </ul>
-                            
-                          </div>
-                        </div>
-                      
-                    </nav>
-
-
-                <!-- <div class="d-flex toggle-menu d-md-none d-lg-none d-xl-none d-xxl-none justify-content-end col-6" id="toggle-menu">
-                    <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-list toggle-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                      </svg></a>
-                      
-                      
+        <div class="container-fluid p-0">
+            <div class="d-flex justify-content-xs-between justify-content-md-between contenedor-texto">
+                <div class="texto col-xs-9 col-sm-6 col-md-6">
+                    <h1 class="nombre">Alba Espejo Crespo</h1>
+                    <h2 class="profesion-1">Desarrolladora Front End</h2>
+                    <h2 class="profesion-2">Diseñadora web</h2>
                 </div>
-                <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                        Inicio
+        
+                <!-- Menú de navegación en offcanvas -->
+                <nav class="d-flex col-xs-9 col-sm-9 navbar d-md-none d-lg-none d-xl-none d-xxl-none justify-content-end">
+                    <div class="col-xs-3 col-sm-6">
+                        <a class="visitado navbar navbar-dark" href="#">
+                            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </a>
                     </div>
-                  </div> -->
-
-
-                <!-- <div class="buscador col-xs-12 col-md-6">
-                    <input type="text" placeholder="Buscar Habilidades" id="input-search">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="input-icon" viewBox="0 0 24 24" stroke-width="1.  5"  stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                    </svg>
-                      
-                </div> -->
+        
+                    <div class="menu_desplegable offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item"><a class="nav-link active" id="btn-inicio" href="#">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" id="btn-trabajos" href="#">Trabajos</a></li>
+                                <li class="nav-item dropdown"><a class="nav-link" id="btn-contacto" href="#">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            
+        
+            <!-- Menú principal en pantallas grandes -->
             <nav class="menu" id="menu">
                 <a href="#inicio" class="inicio">Inicio</a>
                 <a href="#trabajos" class="trabajo">Trabajos</a>
                 <a href="#contacto" class="contacto">Contacto</a>
             </nav>
-            
         </div>
         
+
+
+
+
     </header>
     
     <section class="main">
         <section class="acerca-de">
             <div class="container">
                 <div class="foto">
-                    <img src="./img/foto curriculum.jpg" alt="Alba Espejo" width="115px">
+                    <img src="./img/foto curriculum.jpg" alt="Alba Espejo">
                 </div>
                 <div class="texto">
                     <h3 class="titulo">Acerca de mi</h3>
-                     Soy una persona muy trabajadora, la cual siempre me gusta superarme y seguir aprendiendo. Hace unos años decidí preparame en lo que de verdad me gustaba, la programación y el diseño web. A lo largo de este tiempo he podido desarrollar diferentes habilidades y proyectos.<br>
-                    Entre mis conocimientos se encuentran: Html, Css, Sass, Javascript, JQuery,Bootstrap, Git y Github, Adobe XD, Figma, UI y UX design.<br>
-                    Me considero una persona que sabe trabajar en equipo, resolutiva, y con la capacidad de unrápido aprendizaje.
+                    <p>Soy una persona trabajadora y con un gran deseo de superación y aprendizaje continuo. Hace unos años, decidí enfocarme en lo que realmente me apasiona: la programación y el diseño web. Desde entonces, he desarrollado diversas habilidades y participado en proyectos que me han permitido aplicar y ampliar mis conocimientos.</p>
+                    <p>Mi experiencia incluye el manejo de tecnologías como React, HTML, CSS, Sass, JavaScript, jQuery, Bootstrap, Git, GitHub, Adobe XD y Figma, además de conocimientos en diseño UI y UX.</p>
+                    <p>Me considero una persona resolutiva, con facilidad para trabajar en equipo y capacidad para aprender rápidamente. Estoy siempre dispuesta a enfrentar nuevos desafíos y aportar el máximo en cada proyecto.</p>
+                    
                 </div>
             </div>
         </section>
@@ -132,247 +103,240 @@
                 <input type="radio" name="categories" id="jquery" value="JQUERY">
                 <input type="radio" name="categories" id="sass" value="SASS">
                 <input type="radio" name="categories" id="node" value="NODE JS">
-                <!-- <input type="radio" name="categories" id="react" value="REACT"> -->
-                <input type="radio" name="categories" id="adobe" value="REACT">
-                <input type="radio" name="categories" id="figma" value="REACT">
+                <input type="radio" name="categories" id="react" value="REACT">
+                <input type="radio" name="categories" id="adobe" value="ADOBE">
+                <input type="radio" name="categories" id="figma" value="FIGMA">
 
                     
-                    <div class="d-flex justify-content-center container-category">
-                            <label id="all-label" for="todos" class="category-item css" category="all">Todos</label>
-                            <label id="html-label" for="html" class="category-item" category="html">Html</label>
-                            <label id="css-label" for="css" class="category-item" category="css">Css</label>
-                            <label id ="js-label" for="javascript" class="category-item" category="js">Javascript</label>
-                            <label id="bootstrap-label" for="bootstrap" class="category-item" category="bootstrap">Bootstrap</label>
-                            <label id="jquery-label" for="jquery" class="category-item" category="jquery">JQuery</label>
-                            <label id="sass-label" for="sass" class="category-item" category="sass">Sass</label>
-                            <label id="node-label" for="node" class="category-item" category="node">Node JS</label>
-                            <!-- <label id="react-label" for="react" class="category-item" category="react">React</label> -->
-                            <label id="adobe-label" for="adobe" class="category-item" category="adobe">Adobe XD</label>
-                            <label id="figma-label" for="figma" class="category-item" category="figma">Figma</label>
+                    <div class="d-flex justify-content-evenly container-category">
+                            <label id="all-label" for="todos" class="category-item" category="all">TODOS</label>
+                            <label id="html-label" for="html" class="category-item" category="html">HTML</label>
+                            <label id="css-label" for="css" class="category-item" category="css">CSS</label>
+                            <label id ="js-label" for="javascript" class="category-item" category="js">JAVASCRIPT</label>
+                            <label id="bootstrap-label" for="bootstrap" class="category-item" category="bootstrap">BOOTSTRAP</label>
+                            <label id="jquery-label" for="jquery" class="category-item" category="jquery">JQUERY</label>
+                            <label id="sass-label" for="sass" class="category-item" category="sass">SASS</label>
+                            <label id="node-label" for="node" class="category-item" category="node">NODE JS</label>
+                            <label id="react-label" for="react" class="category-item" category="react">REACT</label>
+                            <label id="adobe-label" for="adobe" class="category-item" category="adobe">ADOBE XD</label>
+                            <label id="figma-label" for="figma" class="category-item" category="figma">FIGMA</label>
                     </div>
 
+                <div class="container mt-1 container-trabajos-div">
                     
-            <!-- <div class="menu-habilidades d-flex">
-                <ul class="lista-habilidades nav col-12  justify-content-center mb-3">
-                    <li class="nav-item"><a href="#" class="nav-link">HTML</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">CSS</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">JavaScript</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Bootstrap</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Node JS</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">React</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sass</a></li>
-                </ul>
-            </div> -->
+                        <div class="container-trabajos d-flex justify-content-start">
+                            
+                            <div class="posts row justify-content-evenly" id="posts">
 
-        <div class="container p-5 mt-3">
-            
-            <div class="container-trabajos d-flex justify-content-between">
-                
-                <div class="posts row justify-content-evenly" id="posts">
-
-                    <div class="card col-9 col-sm-5 col-lg-3 mb-4 card-personalizado" id="viajes" category="html#css#node">
-                        <img src="./trabajos/agencia-viajes-node.js/portada.png" class="card-img-top" alt="agencia de viajes">
-                        <div class="card-body">
-                            <h5 class="card-title-1">Agencia de Viajes</h5>
-                            <p class="card-text mb-0">Proyecto realizado usando Html, Css y Node JS.</p>
-                            <div class="btn-ver-trabajo row">
-                                <div class="d-flex justify-content-center col-12">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>Node JS</p>
+                                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-personalizado" id="restauranteReact" category="html#css#bootstrap#react">
+                                    <img src="./trabajos/restaurante-react/inicio/p-inicio-1.png" class="card-img-top" alt="Restaurante React">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Restaurante React</h5>
+                                        <p class="card-text mb-0">Proyecto realizado usando React, Html, Css y Bootstrap.</p>
+                                        <div class="btn-ver-trabajo row">
+                                            <div class="d-flex justify-content-center col-12">
+                                                <p>REACT</p>
+                                                <p>HTML</p>
+                                                <p>CSS</p>
+                                                <p>BOOTSTRAP</p>
+                                            </div>
+                                            <a href="./p-trabajos/restauranteReact.html" class="btn btn-sm btn-primary ms-auto" id="trabajo">Ver Trabajo</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <a href="./p-trabajos/agenciaViajes.html" class="btn btn-sm btn-primary ms-auto" id="trabajo1">Ver Trabajo</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card col-9 col-sm-5 col-lg-3 mb-4 card-personalizado" id="veterinaria"  category="css#html#js">
-                        <img src="./trabajos/administración-citas-js-css-html/portada.png" class="card-img-top" alt="citas veterinarias">
-                        <div class="card-body">
-                            <h5 class="card-title-2">Citas Veterinaria</h5>
-                            <p class="card-text mb-0">Proyecto donde podemos editar y eliminar las citas creadas.</p>
-                            <div class="btn-ver-trabajo row">
-                                <div class="d-flex justify-content-center col-12">
-                                    <p>HTML</p>
-                                    <p >CSS</p>
-                                    <p>JAVASCRIPT</p>
+                                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-personalizado" id="viajes" category="html#css#node">
+                                    <img src="./trabajos/agencia-viajes-node.js/portada.png" class="card-img-top" alt="agencia de viajes">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Agencia de Viajes</h5>
+                                        <p class="card-text mb-0">Proyecto realizado usando Html, Css y Node JS.</p>
+                                        <div class="btn-ver-trabajo row">
+                                            <div class="d-flex justify-content-center col-12">
+                                                <p>HTML</p>
+                                                <p>CSS</p>
+                                                <p>Node JS</p>
+                                            </div>
+                                            <a href="./p-trabajos/agenciaViajes.html" class="btn btn-sm btn-primary ms-auto" id="trabajo1">Ver Trabajo</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <a href="./p-trabajos/citasVeterinarias.html" class="btn btn-sm btn-primary ms-auto" id="trabajo2">Ver Trabajo</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card col-9 col-sm-5 col-lg-3 mb-4 card-personalizado" id="travel" category="figma">
-                        <img src="./trabajos/app-travel-figma/1-buena.png" class="card-img-top" alt="app tik-travel">
-                        <div class="card-body">
-                            <h5 class="card-title-3">App Tik-Travel</h5>
-                            <p class="card-text mb-0">Proyecto sobre una App para compartir viajes con otros usuarios.</p>
-                            <div class="btn-ver-trabajo row">
-                                <div class="d-flex justify-content-center col-12">
-                                    <p>FIGMA</p>
+                                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-personalizado" id="veterinaria"  category="css#html#js">
+                                    <img src="./trabajos/administración-citas-js-css-html/portada.png" class="card-img-top" alt="citas veterinarias">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Citas Veterinaria</h5>
+                                        <p class="card-text mb-0">Proyecto donde podemos editar y eliminar las citas creadas.</p>
+                                        <div class="btn-ver-trabajo row">
+                                            <div class="d-flex justify-content-center col-12">
+                                                <p>HTML</p>
+                                                <p >CSS</p>
+                                                <p>JAVASCRIPT</p>
+                                            </div>
+                                            <a href="./p-trabajos/citasVeterinarias.html" class="btn btn-sm btn-primary ms-auto" id="trabajo2">Ver Trabajo</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <a href="./p-trabajos/tikTravel.html" class="btn btn-sm btn-primary ms-auto" id="trabajo3">Ver Trabajo</a>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="card col-9 col-sm-5 col-lg-3 mb-4 card-personalizado" category="figma" id="restFigma">
-                    <img src="./trabajos/restaurante-figma/1-buena.png" class="card-img-top" alt="app restaurante">
-                    <div class="card-body">
-                        <h5 class="card-title-4">App Restaurante</h5>
-                        <p class="card-text mb-0">Proyecto de App de comida, para buscar recetas y chefs.</p>
-                        <div class="btn-ver-trabajo row">
-                            <div class="d-flex justify-content-center col-12">
-                                <p>FIGMA</p>
-                            </div>
-                            <a href="./p-trabajos/appFudd.html" class="btn btn-sm btn-primary ms-auto" id="trabajo4">Ver Trabajo</a>
-                        </div>
-                    </div>
-                    </div>
 
-                    <div class="card col-9 col-sm-5 col-lg-3 mb-4 card-personalizado" category="html#css#bootstrap#js#jquery#figma" id="portpersonal">
-                        <img src="./trabajos/portafolio Alba/1-web-inicio.png" class="card-img-top" alt="img portafolio">
-                        <div class="card-body">
-                            <h5 class="card-title-4">Mi Portafolio</h5>
-                            <p class="card-text mb-0">Proyecto de este portafolio, diseñado primero con Figma.</p>
-                            <div class="btn-ver-trabajo row ">
-                                <div class="d-flex col-12 justify-content-center small">
-                                    <p class="small">HTML</p>
-                                    <p class="small">CSS</p>
-                                    <p class="small">BOOTSTRAP</p>
-                                    <p class="small">JS</p>
-                                    <p class="small">JQUERY</p>
-                                    <p class="small">FIGMA</p>
+                                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-personalizado" id="travel" category="figma">
+                                    <img src="./trabajos/app-travel-figma/1-buena.png" class="card-img-top" alt="app tik-travel">
+                                    <div class="card-body">
+                                        <h5 class="card-title">App Tik-Travel</h5>
+                                        <p class="card-text mb-0">Proyecto sobre una App para compartir viajes con otros usuarios.</p>
+                                        <div class="btn-ver-trabajo row">
+                                            <div class="d-flex justify-content-center col-12">
+                                                <p>FIGMA</p>
+                                            </div>
+                                            <a href="./p-trabajos/tikTravel.html" class="btn btn-sm btn-primary ms-auto" id="trabajo3">Ver Trabajo</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <a href="./p-trabajos/miportafolio.html" class="btn btn-sm btn-primary ms-auto" id="trabajo4">Ver Trabajo</a>
-                            </div>
-                        </div>
-                        </div>
-
-                    <div class="card col-9 col-sm-5 col-lg-3 mb-4 card-personalizado" category="figma" id="music">
-                    <img src="./trabajos/app-musica-figma/1-buena.png" class="card-img-top" alt="app musica">
-                    <div class="card-body">
-                        <h5 class="card-title-5">App Música</h5>
-                        <p class="card-text mb-0">Proyecto de App de música, para buscar artistas,hacer playlist,etc...</p>
-                        <div class="btn-ver-trabajo row">
-                            <div class="d-flex justify-content-center col-12">
-                                <p>FIGMA</p>
-                            </div>
-                            <a href="./p-trabajos/appMusic.html" class="btn btn-sm btn-primary ms-auto" id="trabajo5">Ver Trabajo</a>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="card col-9 col-sm-5 col-lg-3 mb-4 card-personalizado" id="blog"  category="html#css#bootstrap#sass">
-                    <img src="./trabajos/blog/portada.png" class="card-img-top" alt="img blog">
-                    <div class="card-body">
-                        <h5 class="card-title-6">Blog</h5>
-                        <p class="card-text mb-0">Proyecto de un Blog personal para compartir artículos.</p>
-                        <div class="btn-ver-trabajo row">
-                            <div class="d-flex justify-content-center col-12">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>SASS</p>
-                                <p>BOOTSTRAP</p>
-                            </div>
-                            <a href="./p-trabajos/blog.html" class="btn btn-sm btn-primary ms-auto" id="trabajo6">Ver Trabajo</a>
-                        </div>
-                    </div>
-                    </div>
-
-
-                    <!-- *NUEVOS CARDS -->
-                    <div class="card col-9 col-sm-5 col-lg-3 mb-4 card-personalizado" id="rest" category="html#sass#jquery#css">
-                        <img src="./trabajos/restaurante/1.png" class="card-img-top" alt="restaurante">
-                        <div class="card-body">
-                            <h5 class="card-title-6">Restaurante</h5>
-                            <p class="card-text mb-0">Proyecto de una web de un restaurante, donde se puede ver el menú y ubicación.</p>
-                            <div class="btn-ver-trabajo row">
-                                <div class="d-flex justify-content-center col-12">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>SASS</p>
-                                    <p>JQUERY</p>
+                            
+                                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-personalizado" category="figma" id="restFigma">
+                                <img src="./trabajos/restaurante-figma/1-buena.png" class="card-img-top" alt="app restaurante">
+                                <div class="card-body">
+                                    <h5 class="card-title">App Restaurante</h5>
+                                    <p class="card-text mb-0">Proyecto de App de comida, para buscar recetas y chefs.</p>
+                                    <div class="btn-ver-trabajo row">
+                                        <div class="d-flex justify-content-center col-12">
+                                            <p>FIGMA</p>
+                                        </div>
+                                        <a href="./p-trabajos/appFudd.html" class="btn btn-sm btn-primary ms-auto" id="trabajo4">Ver Trabajo</a>
+                                    </div>
                                 </div>
-                                <a href="./p-trabajos/restaurante.html" class="btn btn-sm btn-primary ms-auto" id="trabajo7">Ver Trabajo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="miel card col-9 col-sm-5 col-lg-3 mb-4 card-personalizado" id="miel" category="adobe">
-                        <img src="./trabajos/honey-adobe-xd/web-inicio.png" class="card-img-top"  alt="img app miel">
-                        <div class="card-body">
-                            <h5 class="card-title-6">Web-App miel</h5>
-                            <p class="card-text mb-0">Proyecto de diseño de una Web y App para una tienda de venta de miel.</p>
-                            <div class="btn-ver-trabajo row">
-                                <div class="d-flex justify-content-center col-12">
-                                    <p>ADOBE XD</p>
                                 </div>
-                                <a href="./p-trabajos/webAppMiel.html" class="btn btn-sm btn-primary ms-auto" id="trabajo68">Ver Trabajo</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    
-                    <div class="card col-9 col-sm-5 col-lg-3 mb-4 card-personalizado" id="startup" category="html#css#bootstrap#sass#jquery">
-                        <img src="./trabajos/startup/portada.png" class="card-img-top" alt="startup">
-                        <div class="card-body">
-                            <h5 class="card-title-6">Startup</h5>
-                            <p class="card-text mb-0">Proyecto de una Startup donde poder comprar productos.</p>
-                            <div class="btn-ver-trabajo row">
-                                <div class="d-flex justify-content-center col-12">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>SASS</p>
-                                    <p>JQUERY</p>
-                                    <p>BOOTSTRAP</p>
+                                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-personalizado" category="html#css#bootstrap#js#jquery#figma" id="portpersonal">
+                                    <img src="./trabajos/portafolio Alba/1-web-inicio.png" class="card-img-top" alt="img portafolio">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mi Portafolio</h5>
+                                        <p class="card-text mb-0">Proyecto de este portafolio, diseñado primero con Figma.</p>
+                                        <div class="btn-ver-trabajo row ">
+                                            <div class="d-flex col-12 justify-content-center small">
+                                                <p class="small">HTML</p>
+                                                <p class="small">CSS</p>
+                                                <p class="small">BOOTSTRAP</p>
+                                                <p class="small">JS</p>
+                                                <p class="small">JQUERY</p>
+                                                <p class="small">FIGMA</p>
+                                            </div>
+                                            <a href="./p-trabajos/miportafolio.html" class="btn btn-sm btn-primary ms-auto" id="trabajo4">Ver Trabajo</a>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-personalizado" category="figma" id="music">
+                                <img src="./trabajos/app-musica-figma/1-buena.png" class="card-img-top" alt="app musica">
+                                <div class="card-body">
+                                    <h5 class="card-title">App Música</h5>
+                                    <p class="card-text mb-0">Proyecto de App de música, para buscar artistas,hacer playlist,etc...</p>
+                                    <div class="btn-ver-trabajo row">
+                                        <div class="d-flex justify-content-center col-12">
+                                            <p>FIGMA</p>
+                                        </div>
+                                        <a href="./p-trabajos/appMusic.html" class="btn btn-sm btn-primary ms-auto" id="trabajo5">Ver Trabajo</a>
+                                    </div>
                                 </div>
-                                <a href="./p-trabajos/startup.html" class="btn btn-sm btn-primary ms-auto" id="trabajo9">Ver Trabajo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card col-9 col-sm-5 col-lg-3 mb-4 card-personalizado" id="boot" category="html#bootstrap">
-                        <img src="./trabajos/bootstrap5/1.png" class="card-img-top" alt="img bootstrap">
-                        <div class="card-body">
-                            <h5 class="card-title-6">Bootstrap</h5>
-                            <p class="card-text mb-0">Proyecto usando Bootstrap, para una galería de productos.</p>
-                            <div class="btn-ver-trabajo row">
-                                <div class="d-flex justify-content-center col-12">
-                                    <p>HTML</p>
-                                    <p>BOOTSTRAP</p>
                                 </div>
-                                <a href="./p-trabajos/bootstrap.html" class="btn btn-sm btn-primary ms-auto" id="trabajo10">Ver Trabajo</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card col-9 col-sm-5 col-lg-3 mb-4 card-personalizado" id="portafolio" category="html#css">
-                        <img src="./trabajos/portafolio/1.png" class="card-img-top" alt="portafolio">
-                        <div class="card-body">
-                            <h5 class="card-title-6">Portafolio</h5>
-                            <p class="card-text mb-0">Proyecto de un portafolio básico donde poder compartir tus trabajos.</p>
-                            <div class="btn-ver-trabajo row">
-                                <div class="d-flex justify-content-center col-12">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
+                                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-personalizado" id="blog"  category="html#css#bootstrap#sass">
+                                <img src="./trabajos/blog/portada.png" class="card-img-top" alt="img blog">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blog</h5>
+                                    <p class="card-text mb-0">Proyecto de un Blog personal para compartir artículos.</p>
+                                    <div class="btn-ver-trabajo row">
+                                        <div class="d-flex justify-content-center col-12">
+                                            <p>HTML</p>
+                                            <p>CSS</p>
+                                            <p>SASS</p>
+                                            <p>BOOTSTRAP</p>
+                                        </div>
+                                        <a href="./p-trabajos/blog.html" class="btn btn-sm btn-primary ms-auto" id="trabajo6">Ver Trabajo</a>
+                                    </div>
                                 </div>
-                                <a href="./p-trabajos/portafolio.html" class="btn btn-sm btn-primary ms-auto" id="trabajo11">Ver Trabajo</a>
+                                </div>
+
+                                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-personalizado" id="rest" category="html#sass#jquery#css">
+                                    <img src="./trabajos/restaurante/1.png" class="card-img-top" alt="restaurante">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Restaurante</h5>
+                                        <p class="card-text mb-0">Proyecto de una web de un restaurante, donde se puede ver el menú y ubicación.</p>
+                                        <div class="btn-ver-trabajo row">
+                                            <div class="d-flex justify-content-center col-12">
+                                                <p>HTML</p>
+                                                <p>CSS</p>
+                                                <p>SASS</p>
+                                                <p>JQUERY</p>
+                                            </div>
+                                            <a href="./p-trabajos/restaurante.html" class="btn btn-sm btn-primary ms-auto" id="trabajo7">Ver Trabajo</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="miel card col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-personalizado" id="miel" category="adobe">
+                                    <img src="./trabajos/honey-adobe-xd/web-inicio.png" class="card-img-top"  alt="img app miel">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Web-App miel</h5>
+                                        <p class="card-text mb-0">Proyecto de diseño de una Web y App para una tienda de venta de miel.</p>
+                                        <div class="btn-ver-trabajo row">
+                                            <div class="d-flex justify-content-center col-12">
+                                                <p>ADOBE XD</p>
+                                            </div>
+                                            <a href="./p-trabajos/webAppMiel.html" class="btn btn-sm btn-primary ms-auto" id="trabajo68">Ver Trabajo</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-personalizado" id="startup" category="html#css#bootstrap#sass#jquery">
+                                    <img src="./trabajos/startup/portada.png" class="card-img-top" alt="startup">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Startup</h5>
+                                        <p class="card-text mb-0">Proyecto de una Startup donde poder comprar productos.</p>
+                                        <div class="btn-ver-trabajo row">
+                                            <div class="d-flex justify-content-center col-12">
+                                                <p>HTML</p>
+                                                <p>CSS</p>
+                                                <p>SASS</p>
+                                                <p>JQUERY</p>
+                                                <p>BOOTSTRAP</p>
+                                            </div>
+                                            <a href="./p-trabajos/startup.html" class="btn btn-sm btn-primary ms-auto" id="trabajo9">Ver Trabajo</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-personalizado" id="boot" category="html#bootstrap">
+                                    <img src="./trabajos/bootstrap5/1.png" class="card-img-top" alt="img bootstrap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bootstrap</h5>
+                                        <p class="card-text mb-0">Proyecto usando Bootstrap, para una galería de productos.</p>
+                                        <div class="btn-ver-trabajo row">
+                                            <div class="d-flex justify-content-center col-12">
+                                                <p>HTML</p>
+                                                <p>BOOTSTRAP</p>
+                                            </div>
+                                            <a href="./p-trabajos/bootstrap.html" class="btn btn-sm btn-primary ms-auto" id="trabajo10">Ver Trabajo</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-personalizado" id="portafolio" category="html#css">
+                                    <img src="./trabajos/portafolio/1.png" class="card-img-top" alt="portafolio">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Portafolio</h5>
+                                        <p class="card-text mb-0">Proyecto de un portafolio básico donde poder compartir tus trabajos.</p>
+                                        <div class="btn-ver-trabajo row">
+                                            <div class="d-flex justify-content-center col-12">
+                                                <p>HTML</p>
+                                                <p>CSS</p>
+                                            </div>
+                                            <a href="./p-trabajos/portafolio.html" class="btn btn-sm btn-primary ms-auto" id="trabajo11">Ver Trabajo</a>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
-
                 </div>
-
-            </div>
-        </div>
-                    
-                    
-                    <!-- <div class="ver-mas d-flex justify-content-center">
-                        <h3>Ver más...</h3>
-                    </div> -->
-            
-    
             </div>
 
     </section>
