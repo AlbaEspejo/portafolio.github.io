@@ -65,12 +65,10 @@ body{
     margin: auto;
     overflow: hidden;
 }
-
-
-
-
-
-
+.single-card-container {
+  display: flex;
+  justify-content: center;
+}
 
 /* * SISTEMA DE FILTRADO DE ELEMENTOS */
 
