@@ -1,8 +1,7 @@
-
-
-body {
-    background: #d9e7d581;
+:root {
+    --primary-color: #445d38; /* Define la variable */
 }
+
 .enlaces-trabajos-paginas{
     display: flex !important;
     justify-content: space-between;
@@ -11,7 +10,7 @@ body {
     white-space: nowrap;
 }
 header .navegacion {
-    background: #8DA487;
+    background: var(--primary-color);
     padding: 10px 0 !important;
 }
 
@@ -131,13 +130,13 @@ header .navegacion .contenedor-profesion {
 
 
 .modal .modal-dialog .modal-content .modal-header .modal-title{
-    color: #8DA487;
+    color: var(--primary-color);
     font-size: 20px;
     font-family: 'Sansita', sans-serif;
 }
 
 main .modal .modal-dialog .modal-content .modal-body{
-    background: #8da487;
+    background: var(--primary-color);
 }
 main .modal .modal-dialog .modal-content .modal-body button{
     filter: invert(100%);
@@ -162,18 +161,18 @@ main .title-trabajos{
     font-size: 40px;
     font-weight: 400;
     font-family: 'Sansita', sans-serif;
-    color: #8DA487;
+    color: var(--primary-color);
 }
 main .container .codigo a{
     color: #41503d;
 }
 main .row div .iframe{
     border-radius: 5px;
-    box-shadow: 1px 10px 22px 2px #8DA487;
+    box-shadow: 1px 10px 22px 2px var(--primary-color);
 }
 main .paginas button{
     background: #e3e3e3;
-    color: #8da487;
+    color: var(--primary-color);
     box-shadow: inset 0px 2px 20px 0px rgb(201, 201, 201);
     border: none;
 }

@@ -1,6 +1,9 @@
+:root {
+    --primary-color: #445d38; /* Define la variable */
+}
 
 header{
-    background: #8DA487;
+    background: var(--primary-color);
     height: auto;
     max-height: 600px;
 
@@ -17,18 +20,18 @@ header .container .navbar .navbar-toggler{
     margin-right: 0px;
 }
 header .container .navbar .navbar-toggler:focus{
-    border-color: #8DA487 !important;
+    border-color: var(--primary-color)!important;
 }
 header .container .navbar .navbar-toggler span{
     text-decoration: none;
-    border-color: #8DA487;
+    border-color: var(--primary-color);
 }
 header .container .navbar .offcanvas .offcanvas-header{
     margin-right: -300px !important;
 }
 header .container .navbar .offcanvas .offcanvas-body .form-search .form-control{
     background: rgb(255, 255, 255);
-    border-color: #8DA487
+    border-color: var(--primary-color);
 }
 header .container .navbar .offcanvas .offcanvas-body .form-search .form-control:focus{
     outline: 0;
@@ -38,7 +41,7 @@ header .container .navbar .offcanvas .offcanvas-body .form-search .form-control:
 
 }
 header .container .navbar .offcanvas .offcanvas-body .form-search .btn-search{
-    background: #8da487;
+    background: var(--primary-color);
     color: white;
 }
 

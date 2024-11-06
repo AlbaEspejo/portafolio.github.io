@@ -1,3 +1,6 @@
+:root {
+    --primary-color: #445d38; /* Define la variable */
+}
 
 .container-trabajos-div{
     width: 100% !important;
@@ -16,10 +19,9 @@
 .trabajos .titulo{
     padding-top: 20px;
     font-size: 40px;
-    font-weight: 900;
     font-family: 'Amatic SC', cursive;
-    text-shadow: 1px 1px 0px #8DA487;
-    color: #8DA487;
+    text-shadow: 1px 1px 0px var(--primary-color);
+    color: var(--primary-color);
 }
 .texto p{
     color: #283725;
@@ -44,12 +46,12 @@
     font-size: 16px;
     font-weight: 700;
     border-radius: 10px;
-    color: #8da487;
+    color: var(--primary-color);
     background: #e3e3e3;
     box-shadow: inset 0px 2px 20px 0px rgb(201, 201, 201)
 }
 .trabajos .container-category label:hover{
-    background: rgba(43, 87, 33, 0.588);
+    background: #8cae7a;
     color: white;
     box-shadow: none;
     cursor: pointer;
@@ -82,7 +84,7 @@
 .trabajos .container .card{
     margin-bottom: 30px;
     margin-left: 5px;
-    background: #8DA487;
+    background: #b5cda8;
     border: none;
     box-shadow: 0.5px 0.5px 12px gray;
 }
@@ -100,8 +102,13 @@
 .trabajos .container .card .btn-ver-trabajo{
     margin-top: 30px;
 }
+.trabajos .container .card .btn-ver-trabajo a{
+    background-color: #b5cda8;
+    font-weight: 400;
+    font-size: 16px;
+}
 .trabajos .container .card .btn-ver-trabajo a:hover{
-    background: #4f684a;
+    background: var(--primary-color);
 }
 .trabajos .container .card .btn-ver-trabajo p{
     font-size: 14px;
