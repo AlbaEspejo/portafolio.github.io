@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #445d38; /* Define la variable */
+}
+
+
+footer{
+    background: var(--primary-color);
+    padding: 20px !important;
+}
+
+footer .contacto .row .telefono,
+footer .contacto .row .email ,
+footer .contacto .row .footer-titulo {
+    background: var(--primary-color);
+    font-family: 'Sansita', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 5px;
+}
+footer .contacto .row .texto-footer{
+    font-size: 15px;
+}
+
+footer .contacto svg{
+    margin-left: 5px;
+    color: white ;
+}
